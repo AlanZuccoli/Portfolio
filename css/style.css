@@ -121,7 +121,8 @@ textarea {
 .main-container {
   max-width: 120rem;
   margin: auto;
-  width: 92%; }
+  width: 92%;
+}
 
 .btn {
   background: #0062b9;
@@ -413,11 +414,22 @@ textarea {
 
 #principal-contacts {
   display: flex;
-  align-items: start;
-  justify-content: space-around;
-  width: 1em;
-  margin-bottom: 7rem;
-}
+  margin-bottom: 7rem;}
+  @media only screen and (max-width: 768px) {
+    #principal-contacts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+    }
+    .principal-contacts-links {
+      margin-bottom: 5em;
+    }
+    #principal-contacts-links-tag-03 {
+      margin-bottom: 0;
+    }
+  }
+  
 
 #react-animation-item {
   height: 270px;
@@ -437,10 +449,6 @@ textarea {
 
 .principal-contacts-links-tag:hover {
   color: #0062b9;
-}
-
-#principal-contacts-links-tag-03 {
-  margin-bottom: 0.5rem;
 }
 
 .principal-contacts-links {
@@ -719,7 +727,7 @@ textarea {
       text-decoration: underline;
       font-weight: bold;
       margin-left: 2px; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em){
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
